@@ -1,30 +1,13 @@
-# This is a node.js v8+ JavaScript project
 language: node_js
 node_js:
   - "8"
-
-# Build on Ubuntu Trusty (14.04)
-# https://docs.travis-ci.com/user/reference/trusty/#javascript-and-nodejs-images
 dist: trusty
 sudo: required
-
-# Use Docker
 services:
   - docker
-
-before_install:
-  #- ./install-mongo
-  #- npm install -g mocha
-
 script: "npm run test"
-
-# Send coverage data to Coveralls
 after_success:
   - npm run coverage
-
-#deploy:
-#  provider: script
-#  skip_cleanup: true
-#  script:
-
-#    - npx semantic-release
+notifications:
+  slack:
+    secure: ECZN+3lrQJ6GHVQ0sX6CLBVv3gBoia2fgspp2cNhFAevgqpgQtCttTDGPeuWFW10BGPfSVaxZSVDf3zJs6/xOq6LAWhzaGmquqr5vOV4Iuet+VB47kCFhvoFqyD7nWH2qhfOTD0/ys5ncPMbyKyxBBTX+zsQ9PL7AR4GfPITEYKpjj0x3uRoa4rCrHGyc0GuMsIdifv56A1VjGbqMXHlCFVCcqaIGexW/2kM+aXVF7pJ8y5MwTVnhvY5BcqpmTEmna64Tk2t6IPFz9Adhad20WimeYXdoMbRFvP0mwlgFYBPJN/h5JN6Chr3nKuPLVn8dPfVIGE8711HaD3NJxggcNFkPw+z+2VyIF5sEH/unouWdH036Y2N1xR+o1G8Dvm1HZd+7Zr7YusVq/O3O2XgoQEsRNg5xzgce7sS8ginM7V37X5bd0AnByJ3cmtW0yQtiUUU6vvCg2QzTS24EyzWekFassw5kA7ooSk56MqO+icOHBxBrdhGkz90It1p3GiT/dtmXv5s1U/9EPBamWeMSVWVt4ttUAMC5nDpSLGbfOCGsDKHqbsy70pRC+ZkTjqiQfjHfW4f3dpglq+9Hf11B4bbPiYO533rvQVCFOOfwmtc3f66H1VxxbczN5FkWvfQOD6uhLkt924DwNuLn2xZBLisgSDbLctdjlWcWp4OUPw=
