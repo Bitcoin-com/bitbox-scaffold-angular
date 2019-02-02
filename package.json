@@ -1,9 +1,12 @@
 {
   "name": "bitbox-scaffold-angular",
-  "version": "3.0.2",
+  "version": "3.0.8",
   "license": "MIT",
   "description": "Basic angular app w/ BITBOX bindings",
-  "author": "Gabriel Cardona @ Bitcoin.com",
+  "author": "Gabriel Cardona <gabriel@bitcoin.com>",
+  "engines": {
+    "node": ">=10.15.1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -40,7 +43,7 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "bitbox-sdk": "3.0.2",
+    "bitbox-sdk": "3.0.8",
     "codelyzer": "^4.0.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
