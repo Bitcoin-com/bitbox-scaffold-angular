@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import BITBOXSDK = require("bitbox-sdk/lib/bitbox-sdk");
+import BITBOXSDK = require("bitbox-sdk");
 
 let BITBOX = new BITBOXSDK.default();
 
@@ -23,7 +23,7 @@ let mnemonic = BITBOX.Mnemonic.generate(256, BITBOX.Mnemonic.wordLists()[lang]);
 let rootSeed = BITBOX.Mnemonic.toSeed(mnemonic);
 
 // master HDNode
-let masterHDNode = BITBOX.HDNode.fromSeed(rootSeed, "bitcoincash");
+let masterHDNode = BITBOX.HDNode.fromSeed(rootSeed, "mainnet");
 
 // HDNode of BIP44 account
 let account = BITBOX.HDNode.derivePath(masterHDNode, "m/44'/145'/0'");
