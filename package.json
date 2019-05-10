@@ -1,6 +1,6 @@
 {
   "name": "bitbox-scaffold-angular",
-  "version": "6.1.1",
+  "version": "7.0.12",
   "license": "MIT",
   "description": "Basic angular app w/ BITBOX bindings",
   "author": "Gabriel Cardona <gabriel@bitcoin.com>",
@@ -43,7 +43,7 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "bitbox-sdk": "6.1.1",
+    "bitbox-sdk": "7.0.12",
     "codelyzer": "^4.0.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
