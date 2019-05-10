@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import BITBOX = require("bitbox-sdk").BITBOX;
+import { BITBOX } from "bitbox-sdk";
 
 let bitbox = new BITBOX();
 
