@@ -1,6 +1,6 @@
 {
   "name": "bitbox-scaffold-angular",
-  "version": "8.4.2",
+  "version": "8.7.0",
   "license": "MIT",
   "description": "Basic angular app w/ BITBOX bindings",
   "author": "Gabriel Cardona <gabriel@bitcoin.com>",
