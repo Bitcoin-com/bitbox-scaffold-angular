@@ -11,9 +11,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "nyc --reporter=text mocha --require babel-core/register --timeout 5000",
+    "test": "nyc --reporter=text mocha --require babel-register --timeout 5000",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "coverage:report": "nyc --reporter=html mocha --require babel-core/register --timeout 5000"
+    "coverage:report": "nyc --reporter=html mocha --require babel-register --timeout 5000"
   },
   "bugs": {
     "url": "https://github.com/bigearth/bitbox-scaffold-angular/issues"
@@ -40,9 +40,10 @@
     "@angular/cli": "~8.3.5",
     "@angular/compiler-cli": "~8.2.7",
     "@angular/language-service": "~8.2.7",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "babel-register": "^6.26.0",
     "bitbox-sdk": "8.4.2",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
