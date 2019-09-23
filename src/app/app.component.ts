@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { BITBOX } from "bitbox-sdk";
+import { AddressUtxoResult } from 'bitcoin-com-rest';
 
 let bitbox = new BITBOX();
 
@@ -50,7 +51,7 @@ export class AppComponent {
     this.lang = lang;
 
     bitbox.Address.utxo(cashAddress).then(
-      result => {
+      (result:AddressUtxoResult) => {
         if (!result.utxos[0]) {
           return;
         }
